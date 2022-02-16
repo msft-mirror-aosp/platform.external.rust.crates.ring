@@ -12,6 +12,24 @@
 // OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 // CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
+#![forbid(
+    anonymous_parameters,
+    box_pointers,
+    missing_copy_implementations,
+    missing_debug_implementations,
+    missing_docs,
+    trivial_casts,
+    trivial_numeric_casts,
+    unsafe_code,
+    unstable_features,
+    unused_extern_crates,
+    unused_import_braces,
+    unused_qualifications,
+    unused_results,
+    variant_size_differences,
+    warnings
+)]
+
 extern crate alloc;
 
 use ring::{agreement, error, rand, test, test_file};
@@ -59,6 +77,7 @@ fn agreement_traits() {
     );
 }
 
+#[allow(clippy::block_in_if_condition_stmt)]
 #[test]
 fn agreement_agree_ephemeral() {
     let rng = rand::SystemRandom::new();
@@ -87,12 +106,13 @@ fn agreement_agree_ephemeral() {
 
                 assert_eq!(my_private.algorithm(), alg);
 
-                let result =
+                assert!(
                     agreement::agree_ephemeral(my_private, &peer_public, (), |key_material| {
                         assert_eq!(key_material, &output[..]);
                         Ok(())
-                    });
-                assert_eq!(result, Ok(()));
+                    })
+                    .is_ok()
+                );
             }
 
             Some(_) => {
