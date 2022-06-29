@@ -28,25 +28,7 @@
   ],
   "presubmit": [
     {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
       "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libidsig.test"
-    },
-    {
-      "name": "microdroid_manager_test"
     },
     {
       "name": "ring_test_tests_aead_tests"
@@ -83,32 +65,11 @@
     },
     {
       "name": "ring_test_tests_signature_tests"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ],
   "presubmit-rust": [
     {
-      "name": "apkdmverity.test"
-    },
-    {
-      "name": "authfs_device_test_src_lib"
-    },
-    {
       "name": "doh_unit_test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libidsig.test"
-    },
-    {
-      "name": "microdroid_manager_test"
     },
     {
       "name": "ring_test_tests_aead_tests"
@@ -145,9 +106,6 @@
     },
     {
       "name": "ring_test_tests_signature_tests"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ]
 }
