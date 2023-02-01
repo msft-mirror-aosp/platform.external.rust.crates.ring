@@ -61,9 +61,7 @@ rust_library {
     ],
     apex_available: [
         "//apex_available:platform",
-        "com.android.compos",
         "com.android.resolv",
-        "com.android.virt",
     ],
     min_sdk_version: "29",
 }
@@ -256,6 +254,7 @@ rust_test {
 
 cc_library_static {
     name: "libring-core",
+    defaults: ["rust_static_cc_lib_defaults"],
     host_supported: true,
     srcs: [
         "crypto/cpu-intel.c",
@@ -347,15 +346,14 @@ cc_library_static {
     local_include_dirs: ["include"],
     apex_available: [
         "//apex_available:platform",
-        "com.android.compos",
         "com.android.resolv",
-        "com.android.virt",
     ],
     min_sdk_version: "29",
 }
 
 cc_library_static {
     name: "libring-test",
+    defaults: ["rust_static_cc_lib_defaults"],
     host_supported: true,
     srcs: [
         "crypto/constant_time_test.c",
@@ -363,9 +361,7 @@ cc_library_static {
     local_include_dirs: ["include"],
     apex_available: [
         "//apex_available:platform",
-        "com.android.compos",
         "com.android.resolv",
-        "com.android.virt",
     ],
     min_sdk_version: "29",
 }
