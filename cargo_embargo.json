@@ -7,6 +7,7 @@
   "package": {
     "ring": {
       "add_toplevel_block": "cargo2android_cc.bp",
+      "no_presubmit": true,
       "whole_static_libs": [
         "libring-core",
         "libring-test"
