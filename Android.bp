@@ -80,7 +80,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -112,7 +112,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -141,7 +141,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -170,7 +170,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -199,7 +199,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -228,7 +228,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -257,7 +257,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -286,7 +286,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -315,7 +315,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -344,7 +344,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -373,7 +373,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -402,7 +402,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -431,7 +431,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
@@ -460,7 +460,7 @@ rust_test {
     test_suites: ["general-tests"],
     auto_gen_config: true,
     test_options: {
-        unit_test: true,
+        unit_test: false,
     },
     edition: "2018",
     features: [
