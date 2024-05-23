@@ -3,11 +3,11 @@
     "//apex_available:platform",
     "com.android.resolv"
   ],
-  "extra_cfg": ["soong"],
   "min_sdk_version": "29",
   "package": {
     "ring": {
       "add_toplevel_block": "cargo2android_cc.bp",
+      "no_presubmit": true,
       "whole_static_libs": [
         "libring-core",
         "libring-test"
