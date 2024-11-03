@@ -11,7 +11,8 @@
       "whole_static_libs": [
         "libring-core",
         "libring-test"
-      ]
+      ],
+      "patch": "patches/Android.bp.patch"
     }
   },
   "variants": [
